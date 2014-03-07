@@ -13,14 +13,19 @@
     <input type="text" placeholder="Task Name"></input>
     <button>Add Task</button>
     <div class="list">
-      <ul>
-        <li class="todo">
-          <span class="delete">&times;</span>
-          0 
-          <span class="upvote">&uarr;</span>
-          Placeholder task. 
-        </li>
-      </ul>
+      {{> list}}
     </div>
   </div>
+</template>
+
+<template name="list">
+  <ul>
+  {{#each todos}}
+    <li class="todo">
+      <span class="delete">&times;</span>
+      <span class="upvote">&uarr;</span>
+      {{name}}
+    </li>
+  {{/each}}
+  </ul>
 </template>
