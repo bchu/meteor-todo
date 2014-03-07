@@ -1,0 +1,45 @@
+body {
+  font-family: 'Source Sans Pro';
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+button:active, button:focus {
+  outline: 0;
+}
+
+input[type='text'] {
+  font-size: 1.5rem;
+  border-radius:5px;
+  padding: 10px;
+  border: 1px solid gray;
+  outline: 0;
+  box-shadow: inset 1px 1px 1px gray;
+}
+
+.list {
+  margin: 20px 0 0 20px;
+  width: 100%;
+}
+
+.todo {
+  list-style: none;
+}
+
+.delete, .upvote {
+  color: gray;
+  cursor: pointer;
+}
+.delete:hover, .upvote:hover {
+  opacity: 0.2;
+}
+
