@@ -21,7 +21,7 @@
 <template name="list">
   <ul>
   {{#each todos}}
-    <li class="todo">
+    <li class="todo" data-id="{{_id}}">
       <span class="delete">&times;</span>
       <span class="upvote">&uarr;</span>
       {{name}}

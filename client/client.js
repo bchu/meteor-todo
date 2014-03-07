@@ -8,3 +8,10 @@ Template.app.events({
     Todos.insert({name: taskName});
   }
 });
+
+Template.list.events({
+  'click .delete': function(event) {
+    var id = event.target.parentElement.getAttribute('data-id');
+    Todos.remove(id);
+  }
+});
