@@ -1,5 +1,5 @@
 Template.list.todos = function() {
-  return Todos.find();
+  return Todos.find({}, {sort: {score: -1}});
 };
 
 Template.app.events({
