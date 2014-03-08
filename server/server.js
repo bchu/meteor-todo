@@ -5,6 +5,9 @@ Meteor.startup(function() {
     },
     'update': function(userId, entry, fieldNames, modifier) {
       return modifier.$inc && modifier.$inc.score && modifier.$inc.score == 1;
+    },
+    'remove': function(userId, entry) {
+      return true;
     }
   });
 });
